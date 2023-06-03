@@ -34,7 +34,11 @@ $ php artisan serve
 ## Pengembang Aplikasi
 Pengembang Aplikasi adalah `Teknovasi Suryatama Indonesia`, pengembang merupakan penggagas dari project ini, untuk saat ini pengembang kami masih berproses dalam membangun serta memberikan improvement terhadap aplikasi agar dapat / bisa digunakan untuk umum, oleh karena itu kami berharap feedback dari user untuk kami terus / dapat bisa mengembangkan project aplikasi ini.
 
+## Lisensi Aplikasi
+Lisensi Aplikasi / Project merupakan `Opensource` atau dapat digunakan secara komersial tanpa harus membeli / berlangganan
+
 ## Collaborators
+Untuk join collaborator, Anda dapat request ke Admin kami di email `devadiroot@gmail.com` dengan subject `Request Join Collaborator Terintegrasi App`
 
 [![](https://github.com/akunduwa.png?size=50)](https://github.com/akunduwa) 
 [![](https://github.com/aspsptyd.png?size=50)](https://github.com/aspsptyd)
