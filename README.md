@@ -43,3 +43,6 @@ Untuk join collaborator, Anda dapat request ke Admin kami di email `devadiroot@g
 
 [![](https://github.com/akunduwa.png?size=50)](https://github.com/akunduwa) 
 [![](https://github.com/aspsptyd.png?size=50)](https://github.com/aspsptyd)
+<br /><br />
+
+Copyright © 2023 Teknovasi Suryatama Indonesia. All right reserved.
