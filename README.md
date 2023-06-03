@@ -31,4 +31,10 @@ Tahapan terakhir, jalankan project dengan perintah seperti berikut
 $ php artisan serve
 ```
 
-Done.
+## Pengembang Aplikasi
+Pengembang Aplikasi adalah `Teknovasi Suryatama Indonesia`, pengembang merupakan penggagas dari project ini, untuk saat ini pengembang kami masih berproses dalam membangun serta memberikan improvement terhadap aplikasi agar dapat / bisa digunakan untuk umum, oleh karena itu kami berharap feedback dari user untuk kami terus / dapat bisa mengembangkan project aplikasi ini.
+
+## Collaborators
+
+[![](https://github.com/akunduwa.png?size=50)](https://github.com/akunduwa) 
+[![](https://github.com/aspsptyd.png?size=50)](https://github.com/aspsptyd)
