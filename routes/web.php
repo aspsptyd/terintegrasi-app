@@ -20,22 +20,22 @@ use Illuminate\Support\Facades\Route;
 
 Route::prefix('administrator')->middleware(['auth', 'auth.administrator'])->group(function () {
     // Ini route khusus administrator
-    Route::get('beranda', [BerandaAdministratorController::class], 'index')->name('administrator.beranda');
+    Route::get('beranda', [BerandaAdministratorController::class, 'index'])->name('administrator.beranda');
 });
 
 Route::prefix('staff')->middleware(['auth', 'auth.staff'])->group(function () {
     // Ini route khusus staff
-    Route::get('beranda', [BerandaStaffController::class], 'index')->name('staff.beranda');
+    Route::get('beranda', [BerandaStaffController::class, 'index'])->name('staff.beranda');
 });
 
 Route::prefix('siswa')->middleware(['auth', 'auth.siswa'])->group(function () {
     // Ini route khusus siswa
-    Route::get('beranda', [BerandaSiswaController::class], 'index')->name('siswa.beranda');
+    Route::get('beranda', [BerandaSiswaController::class, 'index'])->name('siswa.beranda');
 });
 
 Route::prefix('wali')->middleware(['auth', 'auth.wali'])->group(function () {
     // Ini route khusus wali murid
-    Route::get('beranda', [BerandaWaliController::class], 'index')->name('wali.beranda');
+    Route::get('beranda', [BerandaWaliController::class, 'index'])->name('wali.beranda');
 });
 
 Route::get('logout', function () {
