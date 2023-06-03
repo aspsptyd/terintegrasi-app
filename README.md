@@ -1,3 +1,6 @@
+## Terintegrasi App V1.0
+Versi aplikasi yang masih sederhana, belum ada fitur apa-apa, hanya Register & Login yang sudah terintegrasi dengan database
+
 ## Terintegrasi App
 Aplikasi ini merupakan implementasi sistem yang terintegrasi dengan database, fitur bisa disesuaikan dengan kebutuhan user, terintegrasi memmiliki gagasan ingin menerapkan data yang saling terkait satu sama lainnya, sehingga tidak memerlukan administrasi yang begitu rumit (memangkas birokrasi)
 
