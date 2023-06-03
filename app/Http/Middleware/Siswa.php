@@ -16,6 +16,9 @@ class Siswa
      */
     public function handle(Request $request, Closure $next)
     {
-        return $next($request);
+        if ($request->user()->roles == 'siswa') {
+            return $next($request);
+        }
+        abort(403, 'Akses khusus Siswa');
     }
 }

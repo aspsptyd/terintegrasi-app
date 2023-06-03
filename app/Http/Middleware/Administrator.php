@@ -16,6 +16,9 @@ class Administrator
      */
     public function handle(Request $request, Closure $next)
     {
-        return $next($request);
+        if ($request->user()->roles == 'administrator') {
+            return $next($request);
+        }
+        abort(403, 'Akses khusus administrator');
     }
 }

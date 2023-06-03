@@ -16,6 +16,9 @@ class Staff
      */
     public function handle(Request $request, Closure $next)
     {
-        return $next($request);
+        if ($request->user()->roles == 'administrator' || $request->user()->roles == 'staff') {
+            return $next($request);
+        }
+        abort(403, 'Akses khusus Staff Kantor');
     }
 }
