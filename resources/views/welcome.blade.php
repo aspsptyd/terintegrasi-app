@@ -46,6 +46,7 @@
                     <p style="color:white; font-size: 90%">1. Register & Login yang sudah terintegrasi dengan database</p>
                     <p style="color:white; font-size: 90%; margin-top: -1%">2. Sudah mengintegrasikan fitur login dengan berdasarkan role user, Role user meliputi : Administrator, Staff, Siswa & Wali Murid</p>
                     <p style="color:white; font-size: 90%; margin-top: -1%">3. Install template <a href="https://themewagon.com/themes/free-responsive-bootstrap-5-html5-admin-template-sneat/">Admin Sneat</a></p>
+                    <p style="color:white; font-size: 90%; margin-top: -1%">4. Admin Panel V3.1.0</p>
                 </div>
 
                 <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
