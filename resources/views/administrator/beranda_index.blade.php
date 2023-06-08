@@ -1,22 +1,18 @@
-@extends('layouts.app')
+@extends('layouts.app_sneat')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-12">
-            <div class="card">
-                <div class="card-header">Hi, {{ auth()->user()->name }} as {{ auth()->user()->roles }}</div>
+<div class="col-md-12">
+    <div class="card">
+        <div class="card-header">Hi, {{ auth()->user()->name }} your as <span class="fw-bold">{{ auth()->user()->roles === 'administrator' ? 'Administrator' : 'Undefined!' }}</span></div>
 
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    {{ __('You are logged in!') }}
+        <div class="card-body">
+            @if (session('status'))
+                <div class="alert alert-success" role="alert">
+                    {{ session('status') }}
                 </div>
-            </div>
+            @endif
+
+            {{ __('You are logged in!') }}
         </div>
     </div>
 </div>
