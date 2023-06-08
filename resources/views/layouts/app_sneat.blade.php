@@ -514,7 +514,7 @@
                           </div>
                           <div class="flex-grow-1">
                             <span class="fw-semibold d-block">{{ auth()->user()->name }}</span>
-                            <small class="text-muted">{{ auth()->user()->roles === 'wali' ? 'Wali Murid' : 'Undefined!' }}</small>
+                            <small class="text-muted">{{ auth()->user()->roles === 'wali' ? 'Wali Murid' : (auth()->user()->roles === 'administrator' ? 'Admin' : 'Undefined') }}</small>
                           </div>
                         </div>
                       </a>
@@ -532,7 +532,7 @@
                       <div class="dropdown-divider"></div>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="auth-login-basic.html">
+                      <a class="dropdown-item" href="{{ route('logout') }}">
                         <i class="bx bx-power-off me-2"></i>
                         <span class="align-middle">Log Out</span>
                       </a>
@@ -572,7 +572,7 @@
                     href="https://github.com/themeselection/sneat-html-admin-template-free/issues"
                     target="_blank"
                     class="footer-link me-0"
-                    ><span class="fw-bold">Template by Sneat V1.0.0</span></a
+                    ><span class="fw-bold">Admin Template {{ env('TEMPLATE_ADMIN_VERSION') }}</span></a
                   >
                 </div>
               </div>
