@@ -41,8 +41,11 @@
                     <p style="color:white; font-size: 200%">{{ config('app.name', 'Terintegrasi App') }}</p>
                 </div>
 
-                <div style="margin-top: -3%">
-                    <p style="color:white; font-size: 90%">Pada versi aplikasi ini, sudah mengintegrasikan fitur login dengan berdasarkan role user, Role user meliputi : Administrator, Staff, Siswa & Wali Murid</p>
+                <div style="margin-top: -3%; margin-bottom: -1.5%">
+                    <p style="color:white; font-size: 90%; margin-bottom: -1%">Fitur-fiturnya meliputi :</p>
+                    <p style="color:white; font-size: 90%">1. Register & Login yang sudah terintegrasi dengan database</p>
+                    <p style="color:white; font-size: 90%; margin-top: -1%">2. Sudah mengintegrasikan fitur login dengan berdasarkan role user, Role user meliputi : Administrator, Staff, Siswa & Wali Murid</p>
+                    <p style="color:white; font-size: 90%; margin-top: -1%">3. Install template <a href="https://themewagon.com/themes/free-responsive-bootstrap-5-html5-admin-template-sneat/">Admin Sneat</a></p>
                 </div>
 
                 <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
