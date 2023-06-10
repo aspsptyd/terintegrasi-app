@@ -4,8 +4,8 @@
 ******************************************************************************/
 
 .menu .app-brand.demo {
-  height: 64px;
-  margin-top: 12px;
+  height: 20px;
+  margin-top: 25px;
 }
 
 .app-brand-logo.demo svg {
@@ -14,8 +14,17 @@
 }
 
 .app-brand-text.demo {
-  font-size: 1.25rem;
+  font-size: 1rem;
   letter-spacing: -0.5px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.app-brand-text.sub {
+  font-size: 1rem;
+  letter-spacing: -0.5px;
+  text-transform: sentencecase;
+  margin-bottom: 30px;
 }
 
 /* ! For .layout-navbar-fixed added fix padding top tpo .layout-page */

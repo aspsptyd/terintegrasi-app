@@ -355,7 +355,70 @@
     growthChart.render();
   }
 
-  // Profit Report Line Chart
+  // Profit Report Line Chart New
+  // --------------------------------------------------------------------
+  const profileReportChartNewEl = document.querySelector('#profileReportChartNew'),
+    profileReportChartNewConfig = {
+      chart: {
+        height: 80,
+        // width: 175,
+        type: 'line',
+        toolbar: {
+          show: false
+        },
+        dropShadow: {
+          enabled: true,
+          top: 10,
+          left: 5,
+          blur: 3,
+          color: config.colors.warning,
+          opacity: 0.15
+        },
+        sparkline: {
+          enabled: true
+        }
+      },
+      grid: {
+        show: false,
+        padding: {
+          right: 8
+        }
+      },
+      colors: [config.colors.warning],
+      dataLabels: {
+        enabled: false
+      },
+      stroke: {
+        width: 5,
+        curve: 'smooth'
+      },
+      series: [
+        {
+          data: [10, 45, 40, 245, 25, 285]
+        }
+      ],
+      xaxis: {
+        show: false,
+        lines: {
+          show: false
+        },
+        labels: {
+          show: false
+        },
+        axisBorder: {
+          show: false
+        }
+      },
+      yaxis: {
+        show: false
+      }
+    };
+  if (typeof profileReportChartNewEl !== undefined && profileReportChartNewEl !== null) {
+    const profileReportChartNew = new ApexCharts(profileReportChartNewEl, profileReportChartNewConfig);
+    profileReportChartNew.render();
+  }
+
+    // Profit Report Line Chart
   // --------------------------------------------------------------------
   const profileReportChartEl = document.querySelector('#profileReportChart'),
     profileReportChartConfig = {
