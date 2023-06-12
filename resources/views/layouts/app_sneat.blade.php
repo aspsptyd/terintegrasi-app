@@ -98,7 +98,7 @@
             <li class="menu-item">
               <a href="{{ route('administrator.beranda_index_v2') }}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-home-circle"></i>
-                <div data-i18n="Analytics">Dashboard v2.0</div>
+                <div data-i18n="Analytics">Dashboard</div>
               </a>
             </li>
 
