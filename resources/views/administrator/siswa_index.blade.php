@@ -7,6 +7,7 @@
             <h3 class="card-header">Data Siswa</h3>
     
             <div class="card-body">
+                <a href="{{ route('user.create') }}" class="btn btn-sm btn-primary mb-3">Tambah Data Siswa</a>
                 <div class="table-responsive">
                     <table class="table table-striped">
                         <thead>
