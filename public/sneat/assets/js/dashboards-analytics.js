@@ -278,7 +278,7 @@
   // --------------------------------------------------------------------
   const growthChartEl = document.querySelector('#growthChart'),
     growthChartOptions = {
-      series: [78],
+      series: [200],
       labels: ['Growth'],
       chart: {
         height: 240,
@@ -418,7 +418,133 @@
     profileReportChartNew.render();
   }
 
-    // Profit Report Line Chart
+  // Profit Report Line Chart 1
+  // --------------------------------------------------------------------
+  const profileReportChart1El = document.querySelector('#profileReportChart1'),
+    profileReportChart1Config = {
+      chart: {
+        height: 80,
+        // width: 175,
+        type: 'line',
+        toolbar: {
+          show: false
+        },
+        dropShadow: {
+          enabled: true,
+          top: 10,
+          left: 5,
+          blur: 3,
+          color: config.colors.warning,
+          opacity: 0.15
+        },
+        sparkline: {
+          enabled: true
+        }
+      },
+      grid: {
+        show: false,
+        padding: {
+          right: 8
+        }
+      },
+      colors: [config.colors.warning],
+      dataLabels: {
+        enabled: false
+      },
+      stroke: {
+        width: 5,
+        curve: 'smooth'
+      },
+      series: [
+        {
+          data: [350, 100, 75, 20, 25, 285]
+        }
+      ],
+      xaxis: {
+        show: false,
+        lines: {
+          show: false
+        },
+        labels: {
+          show: false
+        },
+        axisBorder: {
+          show: false
+        }
+      },
+      yaxis: {
+        show: false
+      }
+    };
+  if (typeof profileReportChart1El !== undefined && profileReportChart1El !== null) {
+    const profileReportChart1 = new ApexCharts(profileReportChart1El, profileReportChart1Config);
+    profileReportChart1.render();
+  }
+
+    // Profit Report Line Chart 1
+  // --------------------------------------------------------------------
+  const profileReportChart2El = document.querySelector('#profileReportChart2'),
+    profileReportChart2Config = {
+      chart: {
+        height: 80,
+        // width: 175,
+        type: 'line',
+        toolbar: {
+          show: false
+        },
+        dropShadow: {
+          enabled: true,
+          top: 10,
+          left: 5,
+          blur: 3,
+          color: config.colors.warning,
+          opacity: 0.15
+        },
+        sparkline: {
+          enabled: true
+        }
+      },
+      grid: {
+        show: false,
+        padding: {
+          right: 8
+        }
+      },
+      colors: [config.colors.warning],
+      dataLabels: {
+        enabled: false
+      },
+      stroke: {
+        width: 5,
+        curve: 'smooth'
+      },
+      series: [
+        {
+          data: [225, 110, 40, 245, 25, 285]
+        }
+      ],
+      xaxis: {
+        show: false,
+        lines: {
+          show: false
+        },
+        labels: {
+          show: false
+        },
+        axisBorder: {
+          show: false
+        }
+      },
+      yaxis: {
+        show: false
+      }
+    };
+  if (typeof profileReportChart2El !== undefined && profileReportChart2El !== null) {
+    const profileReportChart2 = new ApexCharts(profileReportChart2El, profileReportChart2Config);
+    profileReportChart2.render();
+  }
+
+  // Profit Report Line Chart
   // --------------------------------------------------------------------
   const profileReportChartEl = document.querySelector('#profileReportChart'),
     profileReportChartConfig = {

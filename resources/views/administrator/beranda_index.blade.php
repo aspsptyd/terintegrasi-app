@@ -343,7 +343,7 @@
                                             <h3 class="mb-0">$84,686k</h3>
                                         </div>
                                     </div>
-                                    <div id="profileReportChartNew"></div>
+                                    <div id="profileReportChart2"></div>
                                 </div>
                             </div>
                         </div>
@@ -364,7 +364,7 @@
                                             <h3 class="mb-0">$84,686k</h3>
                                         </div>
                                     </div>
-                                    <div id="profileReportChartNew"></div>
+                                    <div id="profileReportChart1"></div>
                                 </div>
                             </div>
                         </div>
