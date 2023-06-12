@@ -21,6 +21,7 @@ use Illuminate\Support\Facades\Route;
 Route::prefix('administrator')->middleware(['auth', 'auth.administrator'])->group(function () {
     // Ini route khusus administrator
     Route::get('beranda', [BerandaAdministratorController::class, 'index'])->name('administrator.beranda');
+    Route::get('beranda_index_v2', [BerandaAdministratorController::class, 'index_v2'])->name('administrator.beranda_index_v2');
 });
 
 Route::prefix('staff')->middleware(['auth', 'auth.staff'])->group(function () {
@@ -41,7 +42,7 @@ Route::prefix('wali')->middleware(['auth', 'auth.wali'])->group(function () {
 Route::get('logout', function () {
     Auth::logout();
     return redirect('home');
-});
+})->name('logout');
 
 Route::get('/', function () {
     return view('welcome');
