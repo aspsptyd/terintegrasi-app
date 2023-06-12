@@ -115,7 +115,7 @@
 
               <ul class="menu-sub">
                 <li>
-                  <a href="layouts-without-menu.html" class="menu-link" style="margin-left: 13px">
+                  <a href="{{ route('user.index') }}" class="menu-link" style="margin-left: 13px">
                     <i class="menu-icon tf-icons bx bx-user"></i>
                     <div class="mx-2">Siswa</div>
                   </a>
