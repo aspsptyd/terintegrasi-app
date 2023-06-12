@@ -9,7 +9,7 @@
             <div class="col-lg-6 col-md-4 order-0">
                 <div class="row">
                     <div class="col-lg-4 col-md-6 col-4 mb-0">
-                        {{-- Profit --}}
+                        {{-- Pembayaran SPP --}}
                         <div class="card">
                             <div class="card-body">
                                 <div class="card-title d-flex align-items-start justify-content-between">
@@ -28,7 +28,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <span class="fw-semibold d-block mb-1">Profit</span>
+                                <span class="fw-semibold d-block mb-1">SPP</span>
                                 <h3 class="card-title mb-2">$12,628</h3>
                                 <small class="text-success fw-semibold"><i class="bx bx-up-arrow-alt"></i> +72.80%</small>
                             </div>
@@ -54,7 +54,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <span class="d-block mb-1">Payments</span>
+                                <span class="d-block mb-1">Boarding</span>
                                 <h3 class="card-title text-nowrap mb-2">$2,456</h3>
                                 <small class="text-danger fw-semibold"><i class="bx bx-down-arrow-alt"></i>
                                     -14.82%</small>
@@ -81,7 +81,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <span class="fw-semibold d-block mb-1">Profit</span>
+                                <span class="fw-semibold d-block mb-1">Register</span>
                                 <h3 class="card-title mb-2">$12,628</h3>
                                 <small class="text-success fw-semibold"><i class="bx bx-up-arrow-alt"></i> +72.80%</small>
                             </div>
@@ -112,7 +112,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <span class="fw-semibold d-block mb-1">Profit</span>
+                                <span class="fw-semibold d-block mb-1">Bangunan</span>
                                 <h3 class="card-title mb-2">$12,628</h3>
                                 <small class="text-success fw-semibold"><i class="bx bx-up-arrow-alt"></i> +72.80%</small>
                             </div>
@@ -138,7 +138,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <span class="d-block mb-1">Payments</span>
+                                <span class="d-block mb-1">Buku</span>
                                 <h3 class="card-title text-nowrap mb-2">$2,456</h3>
                                 <small class="text-danger fw-semibold"><i class="bx bx-down-arrow-alt"></i>
                                     -14.82%</small>
@@ -165,7 +165,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <span class="fw-semibold d-block mb-1">Profit</span>
+                                <span class="fw-semibold d-block mb-1">Study Tour</span>
                                 <h3 class="card-title mb-2">$12,628</h3>
                                 <small class="text-success fw-semibold"><i class="bx bx-up-arrow-alt"></i> +72.80%</small>
                             </div>
