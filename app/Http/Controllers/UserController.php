@@ -28,7 +28,13 @@ class UserController extends Controller
      */
     public function create()
     {
-        //
+        $data = [
+            'modeluser' => new \App\Models\User(),
+            'method' => 'POST',
+            'route' => 'user.store',
+            'button' => 'Simpan Data',
+        ];
+        return view('administrator.siswa_form', $data);
     }
 
     /**
