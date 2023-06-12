@@ -86,13 +86,15 @@
           <div class="menu-inner-shadow"></div>
 
           <ul class="menu-inner py-1">
-            <!-- Dashboard -->
-            <li class="menu-item">
+            <!-- Dashboard v1.0 -->
+            {{-- <li class="menu-item">
               <a href="{{ route('administrator.beranda') }}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-home-circle"></i>
                 <div data-i18n="Analytics">Dashboard v1.0</div>
               </a>
-            </li>
+            </li> --}}
+
+            <!-- Dashboard v2.0 -->
             <li class="menu-item">
               <a href="{{ route('administrator.beranda_index_v2') }}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-home-circle"></i>
