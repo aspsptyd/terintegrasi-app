@@ -254,7 +254,10 @@
           <!-- Content wrapper -->
           <div class="content-wrapper">
 
-          @include('flash::message')
+
+          <div class="container-fluid mt-4" style="margin-bottom: -15px">
+            @include('flash::message')
+          </div>
           @yield('content')
 
           </div>
