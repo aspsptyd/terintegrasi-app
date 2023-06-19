@@ -19,6 +19,11 @@
                         <span class="text-danger">{{ $errors->first('email') }}</span>
                     </div>
                     <div class="form-group mt-3">
+                        <label for="password">Password Akses</label>
+                        {!! Form::password('password', ['class' => 'form-control']) !!}
+                        <span class="text-danger">{{ $errors->first('password') }}</span>
+                    </div>
+                    <div class="form-group mt-3">
                         <label for="phone_number">Nomor WhatsApp</label>
                         {!! Form::text('phone_number', null, ['class' => 'form-control']) !!}
                         <span class="text-danger">{{ $errors->first('phone_number') }}</span>
