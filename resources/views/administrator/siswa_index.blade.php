@@ -16,17 +16,28 @@
                                 <th>Nama Siswa</th>
                                 <th>Email</th>
                                 <th>No. WhatsApp</th>
-                                <th>Akses</th>
+                                <th>As Access</th>
+                                <th style="text-align: center">Aksi</th>
                             </tr>
                         </thead>
                         <tbody>
                             @forelse ($modeluser as $item)
                                 <tr>
-                                    <th>{{ $loop->iteration }}</th>
-                                    <th>{{ $item->name }}</th>
-                                    <th>{{ $item->email }}</th>
-                                    <th>{{ $item->phone_number }}</th>
-                                    <th>{{ $item->roles }}</th>
+                                    <td>{{ $loop->iteration }}</td>
+                                    <td>{{ $item->name }}</td>
+                                    <td>{{ $item->email }}</td>
+                                    <td>{{ $item->phone_number }}</td>
+                                    <td>{{ $item->roles }}</td>
+                                    <td style="text-align: center">
+                                        {!! Form::open([
+                                            'route' => ['user.destroy', $item->id],
+                                            'method' => 'DELETE',
+                                            'onsubmit' => 'return confirm("Yakin Anda ingin menghapus data ini?")',
+                                        ]) !!}
+                                        <a href="{{ route('user.edit', $item->id) }}" class="btn btn-warning btn-sm">Edit</a>
+                                        {!! Form::submit('Hapus', ['class' => 'btn btn-danger btn-sm']) !!}
+                                        {!! Form::close() !!}
+                                    </td>
                                 </tr>
                             @empty
                                 <tr>
