@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use \App\Models\User as ModelUser;
+use Carbon\Carbon;
 
 class UserController extends Controller
 {
@@ -45,7 +46,19 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $requestdata = $request->validate([
+            'name' => 'required',
+            'email' => 'required|unique:users',
+            'phone_number' => 'required|unique:users',
+            'roles' => 'required|in:siswa',
+            'password' => 'required',
+        ]);
+        $requestdata['password'] = bcrypt($requestdata['password']);
+        $requestdata['phone_number_verified_at'] = now();
+        $requestdata['email_verified_at'] = Carbon::now();
+        ModelUser::create($requestdata);
+        flash('Data siswa berhasil disimpan');
+        return redirect()->route('user.index');
     }
 
     /**
