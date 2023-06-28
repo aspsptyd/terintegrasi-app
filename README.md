@@ -1,9 +1,11 @@
 ## Requirement Project Setup
-
+Laravel Version
 ```shell
 $ php artisan --version
 Laravel Framework 9.52.8
-
+```
+PHP Version
+```shell
 $ php --version                                                                                                                                                    
 PHP 8.1.20 (cli) (built: Jun 17 2023 06:00:49) (NTS)
 Copyright (c) The PHP Group
