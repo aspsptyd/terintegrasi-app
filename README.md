@@ -6,10 +6,10 @@ Laravel Framework 9.52.8
 ```
 PHP Version
 ```shell
-$ php --version                                                                                                                                                    
+$ php --version
 PHP 8.1.20 (cli) (built: Jun 17 2023 06:00:49) (NTS)
 Copyright (c) The PHP Group
-Zend Engine v4.1.20, Copyright (c) Zend Technologies
+Zend Engine v4.1.20, Copyright (c) Zend Technologies 
     with Zend OPcache v8.1.20, Copyright (c), by Zend Technologies
 ```
 
