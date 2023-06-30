@@ -12,7 +12,7 @@
                     <table class="table table-striped">
                         <thead>
                             <tr>
-                                <th>No.</th>
+                                <th style="text-align: center">No.</th>
                                 <th>Nama Siswa</th>
                                 <th>Email</th>
                                 <th>No. WhatsApp</th>
@@ -23,7 +23,7 @@
                         <tbody>
                             @forelse ($modeluser as $item)
                                 <tr>
-                                    <td>{{ $loop->iteration }}</td>
+                                    <td style="text-align: center">{{ $loop->iteration + (($modeluser->currentPage() -1) * $modeluser->perPage())  }}</td>
                                     <td>{{ $item->name }}</td>
                                     <td>{{ $item->email }}</td>
                                     <td>{{ $item->phone_number }}</td>
@@ -46,6 +46,7 @@
                             @endforelse
                         </tbody>
                     </table>
+                    <br />
                     {!! $modeluser->links() !!}
                 </div>
             </div>

@@ -20,7 +20,7 @@
                     </div>
                     <div class="form-group mt-3">
                         <label for="password">Password Akses</label>
-                        {!! Form::password('password', ['class' => 'form-control']) !!}
+                        {!! Form::password('password', ['class' => 'form-control', 'placeholder' => $hintpassword]) !!}
                         <span class="text-danger">{{ $errors->first('password') }}</span>
                     </div>
                     <div class="form-group mt-3">

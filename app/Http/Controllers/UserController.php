@@ -17,7 +17,7 @@ class UserController extends Controller
         return view('administrator.siswa_index', [
             'modeluser' => ModelUser::where('roles', '=', 'siswa')
                             ->latest()
-                            ->paginate(50)
+                            ->paginate(10)
         ]);
     }
 
@@ -33,6 +33,7 @@ class UserController extends Controller
             'method' => 'POST',
             'route' => 'user.store',
             'button' => 'Simpan Data',
+            'hintpassword' => 'Ketikan password disini'
         ];
         return view('administrator.siswa_form', $data);
     }
@@ -83,6 +84,7 @@ class UserController extends Controller
             'method' => 'PUT',
             'route' => ['user.update', $id],
             'button' => 'Update Data',
+            'hintpassword' => 'Ketikan password jika ingin mengubah'
         ];
         return view('administrator.siswa_form', $data);
     }
