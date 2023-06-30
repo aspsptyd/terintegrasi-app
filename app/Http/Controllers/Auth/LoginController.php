@@ -45,7 +45,7 @@ class LoginController extends Controller
         if ($user->roles == 'staff'){
             return redirect()->route('staff.beranda');
         } else if ($user->roles == 'administrator') {
-            return redirect()->route('administrator.beranda');
+            return redirect()->route('administrator.beranda_index_v2');
         } else if ($user->roles == 'siswa') {
             return redirect()->route('siswa.beranda');
         } else if ($user->roles == 'wali') {

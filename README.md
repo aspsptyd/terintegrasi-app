@@ -1,3 +1,18 @@
+## Requirement Project Setup
+Laravel Version
+```shell
+$ php artisan --version
+Laravel Framework 9.52.8
+```
+PHP Version
+```shell
+$ php --version
+PHP 8.1.20 (cli) (built: Jun 17 2023 06:00:49) (NTS)
+Copyright (c) The PHP Group
+Zend Engine v4.1.20, Copyright (c) Zend Technologies 
+    with Zend OPcache v8.1.20, Copyright (c), by Zend Technologies
+```
+
 ## Terintegrasi App V3.0
 - [x] Register & Login yang sudah terintegrasi dengan database
 - [x] Sudah mengintegrasikan fitur login dengan berdasarkan role user, Role user meliputi : `Administrator`, `Staff`, `Siswa` & `Wali Murid`
