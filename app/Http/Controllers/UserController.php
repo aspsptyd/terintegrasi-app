@@ -84,7 +84,7 @@ class UserController extends Controller
             'method' => 'PUT',
             'route' => [$this->routePrefix . '.show', $id],
             'button' => 'Update Data',
-            'page_info' => 'Ubah',
+            'page_info' => 'Detail',
 
             // Hint Text Input
             'hintfullname' => 'Nama lengkap siswa',
