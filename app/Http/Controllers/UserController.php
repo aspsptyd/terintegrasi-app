@@ -7,6 +7,11 @@ use \App\Models\User as ModelUser;
 
 class UserController extends Controller
 {
+    private $viewIndex = 'siswa_index';
+    private $viewCreate = 'siswa_form';
+    private $viewEdit = 'siswa_form';
+    private $viewShow = 'siswa_detail';
+    private $routePrefix = 'user';
     /**
      * Display a listing of the resource.
      *
@@ -14,7 +19,7 @@ class UserController extends Controller
      */
     public function index()
     {
-        return view('administrator.siswa_index', [
+        return view('administrator.' . $this->viewIndex, [
             'modeluser' => ModelUser::where('roles', '=', 'siswa')
                             ->latest()
                             ->paginate(10)
@@ -31,11 +36,17 @@ class UserController extends Controller
         $data = [
             'modeluser' => new \App\Models\User(),
             'method' => 'POST',
-            'route' => 'user.store',
+            'route' => $this->routePrefix . '.store',
             'button' => 'Simpan Data',
-            'hintpassword' => 'Ketikan password disini'
+            'page_info' => 'Tambah',
+
+            // Hint Text Input
+            'hintfullname' => 'Nama lengkap siswa',
+            'hintemail' => 'Email : example@email.com',
+            'hintpassword' => 'Ketikan password disini',
+            'hintnowa' => 'No. WA: 081xxxxxxxxx'
         ];
-        return view('administrator.siswa_form', $data);
+        return view('administrator.' . $this->viewCreate, $data);
     }
 
     /**
@@ -57,7 +68,7 @@ class UserController extends Controller
         $requestdata['phone_number_verified_at'] = now();
         ModelUser::create($requestdata);
         flash('Data siswa berhasil disimpan');
-        return redirect()->route('user.index');
+        return redirect()->route($this->routePrefix . '.index');
     }
 
     /**
@@ -68,7 +79,20 @@ class UserController extends Controller
      */
     public function show($id)
     {
-        //
+        $data = [
+            'modeluser' => \App\Models\User::findOrFail($id),
+            'method' => 'PUT',
+            'route' => [$this->routePrefix . '.show', $id],
+            'button' => 'Update Data',
+            'page_info' => 'Ubah',
+
+            // Hint Text Input
+            'hintfullname' => 'Nama lengkap siswa',
+            'hintemail' => 'Email : example@email.com',
+            'hintnowa' => 'No. WA: 081xxxxxxxxx',
+            'hintpassword' => 'Ketikan password jika ingin mengubah'
+        ];
+        return view('administrator.' . $this->viewShow, $data);
     }
 
     /**
@@ -82,11 +106,17 @@ class UserController extends Controller
         $data = [
             'modeluser' => \App\Models\User::findOrFail($id),
             'method' => 'PUT',
-            'route' => ['user.update', $id],
+            'route' => [$this->routePrefix . '.update', $id],
             'button' => 'Update Data',
+            'page_info' => 'Ubah',
+
+            // Hint Text Input
+            'hintfullname' => 'Nama lengkap siswa',
+            'hintemail' => 'Email : example@email.com',
+            'hintnowa' => 'No. WA: 081xxxxxxxxx',
             'hintpassword' => 'Ketikan password jika ingin mengubah'
         ];
-        return view('administrator.siswa_form', $data);
+        return view('administrator.' . $this->viewEdit, $data);
     }
 
     /**
@@ -114,7 +144,7 @@ class UserController extends Controller
         $update->fill($requestdata);
         $update->save();
         flash('Data siswa berhasil di perbaharui');
-        return redirect()->route('user.index');
+        return redirect()->route($this->routePrefix . '.index');
     }
 
     /**
@@ -128,6 +158,6 @@ class UserController extends Controller
         $deleteData = ModelUser::findOrFail($id);
         $deleteData->delete();
         flash('Data berhasil di hapus dari database!');
-        return redirect()->route('user.index');
+        return redirect()->route($this->routePrefix . '.index');
     }
 }
