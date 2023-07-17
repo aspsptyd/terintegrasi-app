@@ -13,11 +13,14 @@ Zend Engine v4.1.20, Copyright (c) Zend Technologies
     with Zend OPcache v8.1.20, Copyright (c), by Zend Technologies
 ```
 
-## Terintegrasi App V3.0
+## Terintegrasi App V3.1.1
 - [x] Register & Login yang sudah terintegrasi dengan database
 - [x] Sudah mengintegrasikan fitur login dengan berdasarkan role user, Role user meliputi : `Administrator`, `Staff`, `Siswa` & `Wali Murid`
 - [x] Install template <a href="https://themewagon.com/themes/free-responsive-bootstrap-5-html5-admin-template-sneat/">Admin Sneat</a>
 - [x] Admin Panel V3.1.0
+- [x] Penyesuaian Menu Aktif
+- [x] Modifikasi Form Inputan
+- [x] Detail User  
 
 ## Terintegrasi App
 Aplikasi ini merupakan implementasi sistem yang terintegrasi dengan database, fitur bisa disesuaikan dengan kebutuhan user, terintegrasi memmiliki gagasan ingin menerapkan data yang saling terkait satu sama lainnya, sehingga tidak memerlukan administrasi yang begitu rumit (memangkas birokrasi)
