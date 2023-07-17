@@ -10,4 +10,9 @@ class BerandaAdministratorController extends Controller
     {
         return view('administrator.beranda_index');
     }
+
+    public function index_v2() 
+    {
+        return view('administrator.beranda_index_v2');
+    }
 }
