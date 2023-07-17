@@ -95,10 +95,12 @@
             </li> --}}
 
             <!-- Dashboard v2.0 -->
-            <li class="menu-item">
+            <li class="menu-item {{ Route::is('administrator.*') ? 'open' : null }}">
               <a href="{{ route('administrator.beranda_index_v2') }}" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-home-circle"></i>
-                <div data-i18n="Analytics">Dashboard</div>
+                <i class="menu-icon tf-icons bx {{ Route::is('administrator.*') ? 'bxs-home-circle' : 'bx-home-circle' }}"></i>
+                <div class="{{ Route::is('administrator.*') ? 'active-menu-set' : null }}">
+                  {{ env('DASHBOARD_VERSION') }}
+                </div>
               </a>
             </li>
 
@@ -107,17 +109,21 @@
             </li>
 
             <!-- Master Data -->
-            <li class="menu-item mt-1">
+            <li class="menu-item mt-1 {{ Route::is('user.*') ? 'open' : null }}">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
-                <i class="menu-icon tf-icons bx bx-box"></i>
-                <div>Master Data</div>
+                <i class="menu-icon tf-icons bx {{ Route::is('user.*') ? 'bxs-box' : 'bx-box' }}"></i>
+                <div class="{{ Route::is('user.*') ? 'active-menu-set' : null }}">
+                  Master Data
+                </div>
               </a>
 
               <ul class="menu-sub">
                 <li>
-                  <a href="{{ route('user.index') }}" class="menu-link" style="margin-left: 13px">
-                    <i class="menu-icon tf-icons bx bx-user"></i>
-                    <div class="mx-2">Siswa</div>
+                  <a href="{{ route('user.index') }}" class="menu-link {{ Route::is('user.*') ? 'active' : null }}" style="margin-left: 13px">
+                    <i class="menu-icon tf-icons bx {{ Route::is('user.*') ? 'bxs-user' : 'bx-user' }}"></i>
+                    <div class="mx-2 {{ Route::is('user.*') ? 'active-menu-set' : null }}">
+                      Siswa
+                    </div>
                   </a>
                 </li>
                 <li>

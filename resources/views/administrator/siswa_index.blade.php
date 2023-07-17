@@ -17,6 +17,7 @@
                                 <th>Email</th>
                                 <th>No. WhatsApp</th>
                                 <th>As Access</th>
+                                <th>Register at</th>
                                 <th style="text-align: center">Aksi</th>
                             </tr>
                         </thead>
@@ -28,6 +29,7 @@
                                     <td>{{ $item->email }}</td>
                                     <td>{{ $item->phone_number }}</td>
                                     <td>{{ $item->roles }}</td>
+                                    <td>{{ $item->created_at }}</td>
                                     <td style="text-align: center">
                                         {!! Form::open([
                                             'route' => ['user.destroy', $item->id],
@@ -36,6 +38,7 @@
                                         ]) !!}
                                         <a href="{{ route('user.edit', $item->id) }}" class="btn btn-warning btn-sm">Edit</a>
                                         {!! Form::submit('Hapus', ['class' => 'btn btn-danger btn-sm']) !!}
+                                        <a href="{{ route('user.show', $item->id) }}" class="btn btn-primary btn-sm">Details</a>
                                         {!! Form::close() !!}
                                     </td>
                                 </tr>

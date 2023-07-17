@@ -113,3 +113,7 @@
   text-align: center;
   margin-top: 1rem;
 }
+.active-menu-set {
+  color: #524f4f; 
+  font-weight: bold;
+}
