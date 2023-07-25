@@ -99,7 +99,7 @@
               <a href="{{ route('administrator.beranda_index_v2') }}" class="menu-link">
                 <i class="menu-icon tf-icons bx {{ Route::is('administrator.*') ? 'bxs-home-circle' : 'bx-home-circle' }}"></i>
                 <div class="{{ Route::is('administrator.*') ? 'active-menu-set' : null }}">
-                  {{ env('DASHBOARD_VERSION') }}
+                  Dashboard
                 </div>
               </a>
             </li>
@@ -109,10 +109,10 @@
             </li>
 
             <!-- Master Data -->
-            <li class="menu-item mt-1 {{ Route::is('user.*') ? 'open' : null }}">
+            <li class="menu-item mt-1 {{ Route::is('user.*') || Route::is('guru.*') ? 'open' : null }}">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
-                <i class="menu-icon tf-icons bx {{ Route::is('user.*') ? 'bxs-box' : 'bx-box' }}"></i>
-                <div class="{{ Route::is('user.*') ? 'active-menu-set' : null }}">
+                <i class="menu-icon tf-icons bx {{ Route::is('user.*') || Route::is('guru.*') ? 'bxs-box' : 'bx-box' }}"></i>
+                <div class="{{ Route::is('user.*') || Route::is('guru.*') ? 'active-menu-set' : null }}">
                   Master Data
                 </div>
               </a>
@@ -127,9 +127,11 @@
                   </a>
                 </li>
                 <li>
-                  <a href="layouts-without-navbar.html" class="menu-link" style="margin-left: 13px">
-                    <i class="menu-icon tf-icons bx bx-user"></i>
-                    <div class="mx-2">Guru</div>
+                  <a href="{{ route('guru.index') }}" class="menu-link {{ Route::is('guru.*') ? 'active' : null }}" style="margin-left: 13px">
+                    <i class="menu-icon tf-icons bx {{ Route::is('guru.*') ? 'bxs-user' : 'bx-user' }}"></i>
+                    <div class="mx-2 {{ Route::is('guru.*') ? 'active-menu-set' : null }}">
+                      Guru
+                    </div>
                   </a>
                 </li>
                 <li>
