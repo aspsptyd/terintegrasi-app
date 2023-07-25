@@ -4,6 +4,7 @@ use App\Http\Controllers\BerandaAdministratorController;
 use App\Http\Controllers\BerandaSiswaController;
 use App\Http\Controllers\BerandaStaffController;
 use App\Http\Controllers\BerandaWaliController;
+use App\Http\Controllers\GuruController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -24,6 +25,7 @@ Route::prefix('administrator')->middleware(['auth', 'auth.administrator'])->grou
     // Route::get('beranda', [BerandaAdministratorController::class, 'index'])->name('administrator.beranda');
     Route::get('beranda_index_v2', [BerandaAdministratorController::class, 'index_v2'])->name('administrator.beranda_index_v2');
     Route::resource('user', UserController::class);
+    Route::resource('guru', GuruController::class);
 });
 
 Route::prefix('staff')->middleware(['auth', 'auth.staff'])->group(function () {

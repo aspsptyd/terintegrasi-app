@@ -67,7 +67,7 @@ class UserController extends Controller
         $requestdata['password'] = bcrypt($requestdata['password']);
         $requestdata['phone_number_verified_at'] = now();
         ModelUser::create($requestdata);
-        flash('Data siswa berhasil disimpan');
+        flash('Data siswa berhasil disimpan', 'warning');
         return redirect()->route($this->routePrefix . '.index');
     }
 
@@ -143,7 +143,7 @@ class UserController extends Controller
         }
         $update->fill($requestdata);
         $update->save();
-        flash('Data siswa berhasil di perbaharui');
+        flash('Data siswa berhasil di perbaharui', 'warning');
         return redirect()->route($this->routePrefix . '.index');
     }
 
@@ -157,7 +157,7 @@ class UserController extends Controller
     {
         $deleteData = ModelUser::findOrFail($id);
         $deleteData->delete();
-        flash('Data berhasil di hapus dari database!');
+        flash('Data berhasil di hapus dari database!', 'danger');
         return redirect()->route($this->routePrefix . '.index');
     }
 }
